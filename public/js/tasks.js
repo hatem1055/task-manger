@@ -16,6 +16,8 @@ if(!localStorage.getItem('token')){
             $('.noTasks').hide()
         }
         $('#loadingScreen').fadeOut()
+    }).catch(e=>{
+        location.replace('/')
     })
 }
 
