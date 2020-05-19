@@ -94,7 +94,7 @@ headers: {
     Authorization:`Bearer ${localStorage.getItem('token')}`
 }
 }).then(r=>{
-      })
+})
 })
 $('body').on('click','.editTask', function () {
 const taskDesc = $(this).parent().parent().parent().siblings().children()
