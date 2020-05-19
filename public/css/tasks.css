@@ -7,7 +7,7 @@ body{
     text-transform: capitalize;
 }
 .main {
-    position: fixed;
+    position: absolute;
     top: 2%;
     left: 3%;
     width: 95%;
@@ -63,7 +63,7 @@ position: relative;
 }
 .actions li {
     list-style: none;
-    margin-right: 14px;
+    margin-right: 7px;
 }
 .actions button{
     padding-bottom: 2px;
@@ -125,9 +125,10 @@ position: relative;
         right: 14px;
     }
     .actions {
-        display: flex;
         float: right;
-        margin-right: 23px;
+        width: 297px;
+        position: relative;
+        left: -9px;
     }
     .taskDesc {
         cursor: pointer;
@@ -143,12 +144,6 @@ position: relative;
         top: 2px;
         left: -15px;
         margin-bottom:3px;
-    }
-    .editTask{
-        right: 109px;
-    }
-    .removeTask{
-        left: 54px;
     }
 
 }

@@ -7,7 +7,7 @@ body{
     text-transform: capitalize;
 }
 .main{
-    position: fixed;
+    position: absolute;
     top: 18%;
     left: 18%;
     width: 68%;
@@ -95,7 +95,7 @@ label{
 /*mobile styles*/
 @media only screen and (max-width: 600px) {
     .main {
-        position: fixed;
+        position: absolute;
         top: 3%;
         left: 16%;
         width: 68%;
