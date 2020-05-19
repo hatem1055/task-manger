@@ -108,8 +108,8 @@ label{
         margin-right: 48px;
     }
     form {
-        position: fixed;
-        left: 18%;
+        position: absolute;
+        left: 7%;
     }
     .form input {
         width: 246px;
