@@ -118,10 +118,6 @@ position: relative;
     to {transform: rotate(360deg);}
   }
 @media only screen and (max-width: 600px) {
-    body{
-        overflow:scroll;
-        overflow-x: hidden;
-    }
     .addTaskForm button {
         right: 14px;
     }
