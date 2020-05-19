@@ -5,6 +5,7 @@ body{
     --main-color:#0d987f;
     font-family:font-awesome;
     text-transform: capitalize;
+    overflow-x: hidden;
 }
 .main {
     position: absolute;
