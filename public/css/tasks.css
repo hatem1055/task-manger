@@ -126,9 +126,9 @@ position: relative;
     }
     .actions {
         float: right;
-        width: 297px;
+        width: 421px;
         position: relative;
-        left: -9px;
+        left: 130px;
     }
     .taskDesc {
         cursor: pointer;
