@@ -1,0 +1,143 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color:#eee;
+    --main-color:#0d987f;
+    font-family:font-awesome;
+    text-transform: capitalize;
+}
+.main{
+    position: fixed;
+    top: 18%;
+    left: 18%;
+    width: 68%;
+    height: 80%;
+}
+.toggle_div{
+    height: 100%;
+    background-color:var(--main-color);
+    color:white;
+}
+.toggle_div .content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 35px;
+    margin-right: 48px;
+}
+.welcome{
+    font-weight: 700;
+}
+.message{
+    font-weight: 400;
+}
+.toggler {
+    margin-left: 9%;
+    width: 172px;
+    color: white;
+    background: transparent;
+    border: 0.7px solid white;
+    border-radius: 132px;
+}
+
+.sign-up{
+    margin-top: 48px;
+    display:none
+}
+.log-in{
+    margin-top: 89px;
+}
+form{
+    position: fixed;
+    left: 54%;
+}
+label{
+    font-weight: 600;
+    color: red;
+    display:none;
+}
+.form{
+    background-color: white;
+}
+.form input,.form button{
+    display: block;
+}
+.form h3{
+    color:var(--main-color);
+    font-weight: 700;
+}
+.form button{
+    background-color: var(--main-color);
+    width: 172px;
+    color: white;
+    border: 0.7px solid white;
+    border-radius: 132px;
+    position: absolute;
+    left:20%;
+    /* left: 250px; */
+}
+.form input {
+    width: 246px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    background-color: #e8e5e5;
+    padding: 6px;
+    position: relative;
+    /* left: 180px; */
+}
+.alert{
+    position: fixed;
+    top: 50%;
+    width: 44%;
+    left: 30%;
+    display: none;
+}
+/*mobile styles*/
+@media only screen and (max-width: 600px) {
+    .main {
+        position: fixed;
+        top: 3%;
+        left: 16%;
+        width: 68%;
+        height: 80%;
+    }
+    .toggle_div .content {
+        margin-top: 45px;
+        margin-bottom: 24px;
+        margin-left: 26px;
+        margin-right: 48px;
+    }
+    form {
+        position: fixed;
+        left: 18%;
+    }
+    .form input {
+        width: 246px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border: none;
+        background-color: #e8e5e5;
+        padding: 6px;
+        position: relative;
+        /* left: 180px; */
+    }
+    .form {
+        background-color: white;
+        height: 276px;
+    }
+    .alert {
+        position: fixed;
+        top: 18%;
+        width: 96%;
+        left: 2%;
+        display: none;
+    }
+    .log-in {
+        margin-top: 48px;
+    }
+    .sign-up {
+        margin-top: 6px;
+        display: none;
+    }
+    
+}

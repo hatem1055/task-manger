@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--bootstrap cdn-->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <!--chartjs cdn-->
+         <link href="https://github.com/chartjs/Chart.js.git">
+         <!--fontawesome cdn-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <!--google font cdn-->
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <!--hover.css cdn-->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+         <!--emojy cdn-->
+         <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="col-lg-4 toggle_div">
+                <div class="content">
+                    <h3 class="welcome" align='center'>hello,friend</h3>
+                    <p class="message" align='center'>enter your personal details and start journy with us</p>
+                    <button class="toggler btn" align='center' data-show='sign-up'>sign up</button>
+                </div>
+            </div>
+            <div class="col-lg-8 form">
+                <div class="sign-up pagination-centered" style='display:none'>
+                    <h3 align='center'>create account</h3>
+                    <form action="post">
+                        <input type="text" placeholder="name" class='name' data-required='1'>
+                        <input type="text" placeholder="email" class='email' data-required='6'>
+                        <input type="password" placeholder="password" class='password' data-required='6'>
+                        <input type="password" placeholder="confirm password" class='password-confirm' data-required='6'>
+                        <button class='btn sign-up-button form-btn'>sign up</button>
+                    </form>
+                </div>
+                <div class="log-in pagination-centered">
+                    <h3 align='center'>log in to tasker </h3>
+                    <form action="post">
+                        <input type="text" class='email' placeholder="email" data-required='6'>
+                        <input type="password" placeholder="password" class='password' data-required='6'>
+                        <button class='btn log-in-button form-btn'>log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <p class="error" align='center'>email is unvalid</p>
+            <button type="button" class="close"  aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sign-up.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

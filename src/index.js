@@ -13,20 +13,16 @@ app.use(express.json())
 //using routers
 app.use(userRouter)
 app.use(taskRouter)
+//pages
+const path = require('path')
+
+app.use(express.static(path.join(__dirname,'../public')))
 //runing the app
-app.listen(port,'192.168.1.21',()=>{
+app.listen(port,'192.168.1.22',()=>{
     console.log('server is up on port:' + port)
 })
 
-const Task = require("./db/models/task")
-const User = require("./db/models/user")
-const multer  = require('multer')
-const upload = multer({
-    dest:'./images/'
-})
 
-app.post('/upload',upload.single('image'),(req,res)=>{
-    res.send()
-})
+
 // main()
 

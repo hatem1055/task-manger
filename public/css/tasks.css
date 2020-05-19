@@ -1,0 +1,152 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color:white;
+    --main-color:#0d987f;
+    font-family:font-awesome;
+    text-transform: capitalize;
+}
+.main {
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    width: 95%;
+
+}
+.header{
+background-color: #0f8872;
+padding: 20px;
+position: relative;
+}
+.addTaskForm button {
+    position: absolute;
+    right: 38px;
+    top: 18px;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: white;
+}
+.addTaskForm input {
+    width: 96%;
+    padding: 11px;
+    background-color: #51a797;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.body{
+    margin-top: -16px;
+    background-color: #eee;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+}
+.task {
+    list-style: none;
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding: 5px;
+    margin-right: 22px;
+}
+.actions{
+    display: flex;
+    float: right;
+    /* position: absolute;
+    right: 0; */
+}
+.actions li {
+    list-style: none;
+    margin-right: 14px;
+}
+.actions button{
+    padding-bottom: 2px;
+    position: relative;
+    top: 2px;
+}
+.taskDesc {
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    margin-left: 12px;
+    position: relative;
+    top: 7px;
+}
+.done{
+    text-decoration: line-through;
+}
+.taskDesc:hover{
+    background-color: #eeeeee;
+}
+.log-out{
+    position: fixed;
+    right: 7px;
+    bottom: 2px;
+    border-radius: 42%;
+}
+#loadingScreen{
+    position: fixed;
+    height: 100%;
+    width:100%;
+    z-index:999;
+    top:0;
+    background-color: white;
+}
+.spinner {
+    color: black;
+    height: 28px;
+    width: 28px;
+    border: solid 5px #1c87c9;
+    border-bottom-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    animation:rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+@media only screen and (max-width: 600px) {
+    body{
+        overflow:scroll
+    }
+    .addTaskForm button {
+        right: 14px;
+    }
+    .actions {
+        display: flex;
+        float: right;
+        margin-right: 23px;
+    }
+    .taskDesc {
+        cursor: pointer;
+        float: left;
+        font-weight: 600;
+        margin-left: 12px;
+        position: relative;
+        top: 7px;
+        left: -29px;
+    }
+    .editTaskInput{
+        position: relative;
+        top: 2px;
+        left: -15px;
+        margin-bottom:3px;
+    }
+    .editTask{
+        right: 109px;
+    }
+    .removeTask{
+        left: 54px;
+    }
+
+}
