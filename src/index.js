@@ -2,7 +2,7 @@
 const express = require('express'),
       app = express(),
       // the port that the app will run on
-      port = process.env.PORT,
+      port = process.env.PORT || 3000,
       //getting routers
       userRouter = require('./routers/userRouter'),
       taskRouter = require('./routers/taskRouter')
