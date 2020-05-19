@@ -18,7 +18,7 @@ const path = require('path')
 
 app.use(express.static(path.join(__dirname,'../public')))
 //runing the app
-app.listen(port,'192.168.1.22',()=>{
+app.listen(port,()=>{
     console.log('server is up on port:' + port)
 })
 
