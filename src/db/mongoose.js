@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 //constant strings
-const connectionUrl = "mongodb+srv://hatem1055:hatemmostafa10@cluster0-zb1c8.mongodb.net/test?retryWrites=true&w=majority"
+const connectionUrl = "mongodb://127.0.0.1:27017/task-manger-api"
 
 mongoose.connect(connectionUrl,{
     useNewUrlParser:true,

@@ -119,7 +119,7 @@ $('body').on('blur','.editTaskInput', function () {
             $(this).replaceWith(`<p class="taskDesc ${done}" data-id="${id}">${editedVal}</p>`)
     })
 })
-$('.log-out').on('click',function(){
+$('.confirmLogOut').on('click',function(){
 axios.post('/users/logout',{},{
         headers:{
             Authorization:`Bearer ${localStorage.getItem('token')}`

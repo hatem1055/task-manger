@@ -84,11 +84,13 @@ position: relative;
 .taskDesc:hover{
     background-color: #eeeeee;
 }
-.log-out{
+.log-out {
     position: fixed;
     right: 7px;
-    bottom: 2px;
-    border-radius: 42%;
+    bottom: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 #loadingScreen{
     position: fixed;
