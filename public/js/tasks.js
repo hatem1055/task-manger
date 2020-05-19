@@ -74,7 +74,7 @@ $('body').on('click','.removeTask', function () {
 $('body').on('click','.incompleted button,.completed button', function () {
     $(this).parent().toggleClass('incompleted completed')
     $(this).toggleClass('btn-danger btn-success')
-    $('.done,.notDone').toggleClass('done notDone')
+    $(this).parent().parent().parent().siblings().children().toggleClass('done notDone')
     $('.incompleted button').text('incompleted')
     $('.completed button').text('completed')
 })
